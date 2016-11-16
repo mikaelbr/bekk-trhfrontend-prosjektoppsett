@@ -18,14 +18,14 @@
     * Legg til en prod-build av det: `build-prod`: `webpack -p src/app.js dist/build.js`
     * Verifiser innholdet av `build.js` for å se endret output til minifisert med UglifyJS2.
 8. Endre innhold i `app.js` til å bruke en ES2015 feature:
-```js
-import add from './lib/math';
+  ```js
+  import add from './lib/math';
 
-const printAdd = (a, b) =>
-  console.log(`Adding ${a} + ${b}: ${add(a, b)}`);
-console.log('Hello, World!');
-printAdd(1, 2);
-```
+  const printAdd = (a, b) =>
+    console.log(`Adding ${a} + ${b}: ${add(a, b)}`);
+  console.log('Hello, World!');
+  printAdd(1, 2);
+  ```
 9. Kjør `npm run build` for å se at det fungerer.
 10. Sjekk innholdet av `build.js` og se at det er ikke transpilert på noen måte, men det fungerer i Chrome.
 11. Prøv å kjør `npm run build-prod` for å se at det failer. UglifyJS2 fungerer ikke på ES2015 syntaks. Heller ikke alle nettlesere.
@@ -71,6 +71,10 @@ printAdd(1, 2);
   ```
   2. Verifiser at det fungerer med å se i `bundle.js` at nå blir harmony import brukt.
 15. Bruk `-- -w` som en del av `npm run build` dersom man ønsker watch, eller legg det til som egen script.
+
+
+---
+
 
 ## Oppsett av LESS
 
