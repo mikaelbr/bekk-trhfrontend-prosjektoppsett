@@ -88,7 +88,7 @@
   ```less
   * { padding: 0; margin: 0; }
   ```
-6. Verifiser at `bundle.less` har `reset.less.
+6. Verifiser at `bundle.less` har `reset.less`.
 7. Legg til `dist/bundle.css` til `index.html`
 8. Åpne `index.html` for å verifisere at det fungerer.
 9. Legg til transition til `:hover` på h1 i `app.less`:
